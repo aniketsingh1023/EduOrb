@@ -1,0 +1,10 @@
+<h2>Skill: {{ skill }}</h2>
+
+<h3>Your Score: {{ score }} / 50</h3>
+
+{% for evaluation in evaluations %}
+  <div>
+    <p><strong>Question {{ loop.index }} Feedback:</strong> {{ evaluation.feedback }}</p>
+    <p><strong>Score:</strong> {{ evaluation.score }}/10</p>
+  </div>
+{% endfor %}

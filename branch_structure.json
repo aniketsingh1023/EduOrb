@@ -1,0 +1,27 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Sakshi-dev",
+    "Trisha-dev",
+    "aniket-dev",
+    "main",
+    "origin",
+    "pushkar-dev"
+  ],
+  "parent": {
+    "Sakshi-dev": "main",
+    "Trisha-dev": "main",
+    "aniket-dev": "main",
+    "main": null,
+    "origin": "main",
+    "pushkar-dev": "main"
+  },
+  "order": [
+    "main",
+    "Sakshi-dev",
+    "Trisha-dev",
+    "aniket-dev",
+    "origin",
+    "pushkar-dev"
+  ]
+}
