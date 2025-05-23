@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #20232a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+    .card {
+      display: inline-block;
+      padding: 30px;
+      margin: 10px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      min-width: 300px;
+    }
+    .logout-btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff4d4f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .logout-btn:hover {
+      background-color: #d9363e;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to Your Dashboard</h1>
+  </div>
+
+  <div class="content">
+    {% if user_email %}
+      <div class="card">
+        <h2>Hello, {{ user_name }}!</h2>
+        <p><strong>Email:</strong> {{ user_email }}</p>
+      </div>
+      <br>
+      <a href="/logout" class="logout-btn">Logout</a>
+    {% else %}
+      <div class="card">
+        <h2>You are not logged in</h2>
+        <a href="/login" class="logout-btn" style="background-color:#4caf50;">Login with Google</a>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
