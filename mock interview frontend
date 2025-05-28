@@ -1,0 +1,41 @@
+import Image from 'next/image';
+import cornerblur from '../public/cornerblur.jpg'
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center px-4">
+      <div className="text-center max-w-3xl">
+        {/* Tags */}
+        <div className="flex justify-center space-x-4 mb-4">
+          <span className="bg-rose-100 text-red-600 font-semibold px-3 py-1 rounded-full text-sm hover:bg-red-600 hover:text-white transition-colors duration-300">
+            Realistic Practice
+           </span>
+          <span className="bg-orange-100 text-orange-600 font-semibold px-3 py-1 rounded-full text-sm hover:bg-orange-600 hover:text-white transition-colors durations-300">
+            Actionable Feedback
+          </span>
+          <span className="bg-purple-100 text-purple-600 font-semibold px-3 py-1 rounded-full text-sm hover:bg-purple-600 hover:text-white transition colors durations-300">
+            Maximum Impact
+          </span>
+        </div>
+
+        {/* Heading */}
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          AI Interview Practice </h1>
+          <h2 className="text-4xl md:text-3xl font-bold mb-6">
+            Your Ultimate Online Interview Practice Tool
+        </h2>
+
+        {/* Description */}
+        <p className="text-white text-lg mb-8">
+          Face the toughest mock interviews in the world—rigorous standards, intense questions,
+          and zero room for error. Practice with industry giants like Microsoft, Netflix,
+          and OpenAI, and gain the confidence and skills you need to ace any real interview with ease.
+        </p>
+
+        {/* Button */}
+        <button className="bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-orange-900 transition">
+          Start Practicing
+        </button> 
+      </div>
+    </div>
+  );
+}
