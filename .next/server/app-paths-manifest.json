@@ -1,0 +1,13 @@
+{
+  "/onboarding/page": "app/onboarding/page.js",
+  "/api/onboarding/route": "app/api/onboarding/route.js",
+  "/student-dashboard/page": "app/student-dashboard/page.js",
+  "/api/user/profile/route": "app/api/user/profile/route.js",
+  "/doubt-solver/page": "app/doubt-solver/page.js",
+  "/api/doubt-solver/route": "app/api/doubt-solver/route.js",
+  "/exam-generator/page": "app/exam-generator/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/auth/signup/page": "app/auth/signup/page.js",
+  "/api/admin/users/route": "app/api/admin/users/route.js",
+  "/api/admin/stats/route": "app/api/admin/stats/route.js"
+}
